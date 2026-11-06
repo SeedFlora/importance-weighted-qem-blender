@@ -1,0 +1,65 @@
+{
+  "audited_at": "2026-11-03T21:25:33+07:00",
+  "historical_environment_sha256": "b7e28c8c6ebc950c0b7560705a84686815367dcc3b93551b05a44a8b824a1984",
+  "historical_perception_expected_sha256": "54bb85c0b3a94891b4d1e2f833740f96b8c09aeb57ccdf3905cf8a604d555627",
+  "historical_perception_reconstructed_sha256": "54bb85c0b3a94891b4d1e2f833740f96b8c09aeb57ccdf3905cf8a604d555627",
+  "current_perception_sha256": "4a681c8498325bbc29417b92b3864ca895c384299864e57535008a82141306b0",
+  "all_function_AST_hashes_equal": true,
+  "whole_module_AST_equal_except_DEFAULT_WEIGHTS": true,
+  "function_AST_hashes": {
+    "_validate": "1cc62d92cbbfcf319fd3b167effa561c64fa51613f260f6f5d4fd036cab1b356",
+    "_vertex_array": "0f3648598e7f3b758ba6622a0dd7d58d3f596eabc95424c7fc5deb33ea5ca7a5",
+    "_laplacian_parts": "57e186ece643e95c119b7c7cd60fbf6a1790258692f73816203938ad71f36a0b",
+    "_laplace": "2a11ee92916bdbc59814fdfad5e6b7cb61b6fb05e5e65acb68ca9b9441ff31fe",
+    "_mean_curvature": "ce158c3b8f78bd441cef1a5bc479c6ce159f3a77afc78325876e7d66bb8b9301",
+    "_heat_smooth": "82c67b6de713d3701e306fe82d08c9af506fb1132b6712da7dcb1f06b9aa3a4a",
+    "_saliency": "13d7bc3e3b5f639f8c9d5e1edfb0b7617dafe6aaaa04f0d73049cb6fac63b2fc",
+    "mesh_saliency": "2fb28ab6cb18a76d45d23c4b895a08d6f0239146293a6a578363ac67739704fe",
+    "_fibonacci_hemisphere": "3f09bf3389448c1201cad6704e7e2f541af375539082bbd27895c8ec415df3af",
+    "_contour_tolerance": "5bb1b85ddcb0162f71a387ff72b1ef391be021753b0a83b5a30bd8f3c3ccd58d",
+    "_dilate": "4a371dc8fc33b75cb8e483a5752b07a63a62a51f9970fedc0aae94617865c3ff",
+    "_dot_gradient": "bec37a327e3d061c093f07f69d93448e1d6ecda0062399c57bb3ca83585ec7f2",
+    "_outer_silhouette": "5e1f6c7623d94e6213b2ef95f2f224d2f7b4689268ff031a9b1b15ea0a2d16a5",
+    "outer_silhouette": "6c3244d7e89704a50defe2751d5441d94a92c15f0f1866f2d7c9aa785d26fadd",
+    "_normalize_counts": "2fab4302f541e0ab3a129bb15f2eb2a2d034701810e04d6986a2bb75771b8512",
+    "_angle": "e73d133a027db38d12e47d9203535b480ebd33f31147e7f376498903a803cccb",
+    "_sharp": "bb552fd717d3432d258ab1adc3aa7bfae78ef3e1fc4d78b40ad40f40897fe218",
+    "sharp_features": "999e39d9b79cad6cd487ae4e0a0227b87a06427750e37d1b6ec3be29cbdb2a41",
+    "_camera": "a97bf8326b0822619d74b63550f72448c2b1df81727269c6fb7094a517e124f4",
+    "_visibility": "8bf599e01c7b484bcf2b2c0b191a6359ba6c77c40f3e5b28bac629f59e48e6fe",
+    "_winding": "e89323b20dbfc3859f773c62edadc4b9cf1dcc45f75097976f4b60c1ee17f26a",
+    "camera_visibility": "74264a2d5e5793ba6d7f3dfb345784688b01bc7b82a229f91da439a5194d8581",
+    "camera_from_object": "9bdae1087065c4ef7d702a63b20450eb69cf3fafd7687c1df3357a0e0d71f06d",
+    "_weights": "df7ba2de0ece42d2d4ea5f5f7e05ed96fc9ffd7fbed4c34f63e1886d36f39a10",
+    "compute_importance": "5040eecd03441c582910084e1c11d482f51082a2e149fbec79dc2384ae30130f",
+    "__init__": "30b70e70fe80763c766f767f9b9fd1dd5a97ba682680dc880b84c3ed6b10157e",
+    "neighbour_max": "8952963cd49b358bc7bf1a1c31d0e8e9cb8c0beb7574d09d3c1d68cd4d0940e0",
+    "ring_centred": "576eb2ca4f90ef16a7a90a83faf7df8fcd5c4694aa83d30dda937c234274715a"
+  },
+  "only_executable_difference": {
+    "historical_DEFAULT_WEIGHTS": {
+      "saliency": 0.35,
+      "silhouette": 0.4,
+      "sharp": 0.25,
+      "visibility": 0.15
+    },
+    "current_DEFAULT_WEIGHTS": {
+      "saliency": 0,
+      "silhouette": 1,
+      "sharp": 0,
+      "visibility": 0.15
+    }
+  },
+  "call_path": [
+    "Original __init__.py has lazy UI imports only inside register/unregister; harness does not register add-on.",
+    "run_experiment imports geometry, metrics, perception, qem directly; pipeline.generate and ui functions are not invoked.",
+    "parse_args uses DEFAULT_WEIGHTS only when --weights is absent; old and new argv both supply explicit --weights.",
+    "Asset.importance supplies weight_sets(args.weights) explicitly to compute_importance; _weights uses DEFAULT_WEIGHTS only for weights=None.",
+    "Both runs supply --strength 12, bypassing default_strength reads of ui.py and pipeline.py.",
+    "pipeline.py is parsed as AST only for EXTENSION_VERSION metadata. Old and new reported extension version is 0.2.0.",
+    "geometry.py, qem.py, metrics.py, raster.py, __init__.py and run_experiment.py SHA-256 equal historical recorded hashes.",
+    "simplify_levels capture at intermediate targets does not alter collapse sequence (original source lines 709-747); .05-only output is comparable to .05 snapshot from original three-budget run."
+  ],
+  "decision": "Use historical original seven ROI pairs plus new three for exploratory H2. No old remeasurement was started. Compatibility addendum rerun plan is superseded; retain it as audit history.",
+  "limits": "Full source fingerprints differ; only active computational path equivalence is established. Reconstruction hash proves bytes match recorded historical source hash, not source timestamp authenticity."
+}

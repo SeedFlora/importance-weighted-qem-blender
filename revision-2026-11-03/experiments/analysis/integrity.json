@@ -1,0 +1,574 @@
+{
+  "error_records": 0,
+  "new_asset_records": [
+    {
+      "asset_id": "nefertiti",
+      "asset_index": 0,
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source_triangles": 99938,
+      "source_vertices": 49971,
+      "record_type": "asset",
+      "file": "assets/nefertiti.blend",
+      "object": "nefertiti_HighPoly",
+      "geometry_sha256": "f7626f964b5fd185a3525cf78f8a00217cfa05c0cc42fb26342577e5826ef0ae",
+      "geometry_sha256_matches_manifest": true,
+      "roi_vertices": 20964,
+      "roi_vertices_match_manifest": true,
+      "roi_area_fraction_manifest": 0.327156,
+      "locked_vertices": 0,
+      "marked_sharp_vertices": 0,
+      "closed": true,
+      "reference_volume": 0.7638774051311774,
+      "targets": [
+        4997
+      ],
+      "ratios": [
+        0.05
+      ],
+      "open_seconds": 0.03932449998683296,
+      "snapshot_seconds": 0.16137860002345406,
+      "importance": {
+        "default": {
+          "seconds": 7.069179000012809,
+          "channel_seconds": {
+            "topology": 0.05235260000335984,
+            "saliency": 6.639998173341155e-05,
+            "silhouette": 7.015238599997247,
+            "sharp": 3.980001201853156e-05,
+            "visibility": 2.549999044276774e-05
+          },
+          "weights": {
+            "saliency": 0.0,
+            "silhouette": 1.0,
+            "sharp": 0.0,
+            "visibility": 0.0
+          },
+          "effective_weights": {
+            "silhouette": 1.0
+          },
+          "summary": {
+            "saliency": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "silhouette": {
+              "mean": 0.5479204358185851,
+              "nonzero_fraction": 0.9957175161593724,
+              "gt_half_fraction": 0.5192011366592624
+            },
+            "sharp": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "visibility": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "manual": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "combined": {
+              "mean": 0.5479204358185851,
+              "nonzero_fraction": 0.9957175161593724,
+              "gt_half_fraction": 0.5192011366592624
+            }
+          }
+        }
+      },
+      "determinism": {
+        "checked": "QEM simplify_levels repeated once",
+        "seconds": 15.36911830000463,
+        "identical": true
+      },
+      "checks": {
+        "qem_repeat_identical": true,
+        "geometry_sha256_matches_manifest": true,
+        "roi_vertices_match_manifest": true
+      },
+      "conditions_run": [
+        "main/DECIMATE",
+        "main/QEM",
+        "main/PERCEPTUAL"
+      ],
+      "timing_run": false,
+      "lods_file": "revision-2026-11-03/experiments/heldout/lods/nefertiti.blend",
+      "asset_wall_seconds": 66.48228110000491,
+      "session_id": "682d73f68276"
+    },
+    {
+      "asset_id": "lucy",
+      "asset_index": 1,
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source_triangles": 99970,
+      "source_vertices": 49987,
+      "record_type": "asset",
+      "file": "assets/lucy.blend",
+      "object": "lucy_HighPoly",
+      "geometry_sha256": "2e4f5e62ea927a8a652d816fb559c0f41a6f82bd1c115152875828e0ee4bc99a",
+      "geometry_sha256_matches_manifest": true,
+      "roi_vertices": 10137,
+      "roi_vertices_match_manifest": true,
+      "roi_area_fraction_manifest": 0.194171,
+      "locked_vertices": 0,
+      "marked_sharp_vertices": 0,
+      "closed": true,
+      "reference_volume": 0.16035035308139892,
+      "targets": [
+        4998
+      ],
+      "ratios": [
+        0.05
+      ],
+      "open_seconds": 0.04104370001005009,
+      "snapshot_seconds": 0.21200599998701364,
+      "importance": {
+        "default": {
+          "seconds": 5.101813699991908,
+          "channel_seconds": {
+            "topology": 0.042453000001842156,
+            "saliency": 4.020001506432891e-05,
+            "silhouette": 5.055529600009322,
+            "sharp": 1.2900010915473104e-05,
+            "visibility": 7.499998901039362e-06
+          },
+          "weights": {
+            "saliency": 0.0,
+            "silhouette": 1.0,
+            "sharp": 0.0,
+            "visibility": 0.0
+          },
+          "effective_weights": {
+            "silhouette": 1.0
+          },
+          "summary": {
+            "saliency": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "silhouette": {
+              "mean": 0.34724505101150793,
+              "nonzero_fraction": 0.7827635185148138,
+              "gt_half_fraction": 0.29885770300278075
+            },
+            "sharp": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "visibility": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "manual": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "combined": {
+              "mean": 0.34724505101150793,
+              "nonzero_fraction": 0.7827635185148138,
+              "gt_half_fraction": 0.29885770300278075
+            }
+          }
+        }
+      },
+      "determinism": {
+        "checked": "QEM simplify_levels repeated once",
+        "seconds": 25.881929900002433,
+        "identical": true
+      },
+      "checks": {
+        "qem_repeat_identical": true,
+        "geometry_sha256_matches_manifest": true,
+        "roi_vertices_match_manifest": true
+      },
+      "conditions_run": [
+        "main/DECIMATE",
+        "main/QEM",
+        "main/PERCEPTUAL"
+      ],
+      "timing_run": false,
+      "lods_file": "revision-2026-11-03/experiments/heldout/lods/lucy.blend",
+      "asset_wall_seconds": 80.47117820000858,
+      "session_id": "682d73f68276"
+    },
+    {
+      "asset_id": "happy-buddha",
+      "asset_index": 2,
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source_triangles": 98601,
+      "source_vertices": 49251,
+      "record_type": "asset",
+      "file": "assets/happy-buddha.blend",
+      "object": "happy-buddha_HighPoly",
+      "geometry_sha256": "f689d94be859e9c9d94ea74e7e93ae2659785d8b1890a67fb93c5c0d45093fdd",
+      "geometry_sha256_matches_manifest": true,
+      "roi_vertices": 9709,
+      "roi_vertices_match_manifest": true,
+      "roi_area_fraction_manifest": 0.178708,
+      "locked_vertices": 0,
+      "marked_sharp_vertices": 0,
+      "closed": false,
+      "reference_volume": null,
+      "targets": [
+        4930
+      ],
+      "ratios": [
+        0.05
+      ],
+      "open_seconds": 0.03952510000090115,
+      "snapshot_seconds": 0.23920579999685287,
+      "importance": {
+        "default": {
+          "seconds": 12.40078719999292,
+          "channel_seconds": {
+            "topology": 0.11755889997584745,
+            "saliency": 5.889998283237219e-05,
+            "silhouette": 12.277527199999895,
+            "sharp": 2.7700007194653153e-05,
+            "visibility": 1.7699989257380366e-05
+          },
+          "weights": {
+            "saliency": 0.0,
+            "silhouette": 1.0,
+            "sharp": 0.0,
+            "visibility": 0.0
+          },
+          "effective_weights": {
+            "silhouette": 1.0
+          },
+          "summary": {
+            "saliency": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "silhouette": {
+              "mean": 0.39780742436401495,
+              "nonzero_fraction": 0.835597246756411,
+              "gt_half_fraction": 0.3585307912529695
+            },
+            "sharp": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "visibility": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "manual": {
+              "mean": 0.0,
+              "nonzero_fraction": 0.0,
+              "gt_half_fraction": 0.0
+            },
+            "combined": {
+              "mean": 0.39780742436401495,
+              "nonzero_fraction": 0.835597246756411,
+              "gt_half_fraction": 0.3585307912529695
+            }
+          }
+        }
+      },
+      "determinism": {
+        "checked": "QEM simplify_levels repeated once",
+        "seconds": 23.066508100018837,
+        "identical": true
+      },
+      "checks": {
+        "qem_repeat_identical": true,
+        "geometry_sha256_matches_manifest": true,
+        "roi_vertices_match_manifest": true
+      },
+      "conditions_run": [
+        "main/DECIMATE",
+        "main/QEM",
+        "main/PERCEPTUAL"
+      ],
+      "timing_run": false,
+      "lods_file": "revision-2026-11-03/experiments/heldout/lods/happy-buddha.blend",
+      "asset_wall_seconds": 102.81050270001288,
+      "session_id": "682d73f68276"
+    }
+  ],
+  "original_and_new_environment_comparison": [
+    {
+      "path": "results\\evaluation\\quality_A",
+      "sha256": "b7e28c8c6ebc950c0b7560705a84686815367dcc3b93551b05a44a8b824a1984",
+      "status": "completed",
+      "source_hashes_equal_to_new": false,
+      "blender_equal_to_new": true,
+      "config": {
+        "manifest": "dataset/manifest.json",
+        "manifest_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+        "split": "evaluation",
+        "assets_filter": [
+          "max_planck",
+          "bunny",
+          "fandisk"
+        ],
+        "experiments": [
+          "main",
+          "ablation",
+          "sweep"
+        ],
+        "ratios": [
+          0.5,
+          0.2,
+          0.05
+        ],
+        "reps": 3,
+        "warmup": 1,
+        "seed": 20260921,
+        "samples": 4000,
+        "resolution": 512,
+        "strength": 12.0,
+        "strength_source": "--strength",
+        "weights": {
+          "saliency": 0.0,
+          "silhouette": 1.0,
+          "sharp": 0.0,
+          "visibility": 0.0
+        },
+        "effective_weights": {
+          "silhouette": 1.0
+        },
+        "lambdas": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          8.0,
+          12.0,
+          20.0
+        ],
+        "anchor_v01_strength": 8.0,
+        "save_lods": true,
+        "roi_group": "LOD_EvalROI",
+        "roi_threshold": 0.5,
+        "multiview": true,
+        "manual_protection": null,
+        "camera": null,
+        "preserve_seams": false,
+        "target_rule": "max(4, round(source_triangles * ratio))",
+        "importance_defaults": {
+          "sharp_angle": 45.0,
+          "silhouette_views": 64,
+          "silhouette_resolution": 256
+        },
+        "timing_order_rng": "numpy.random.default_rng([seed, asset_index, rep]).permutation(3)"
+      }
+    },
+    {
+      "path": "results\\evaluation\\quality_B",
+      "sha256": "072209e60466cb3aa94d179788673d81ee549def03065cdcdae80d3fd0099b78",
+      "status": "completed",
+      "source_hashes_equal_to_new": false,
+      "blender_equal_to_new": true,
+      "config": {
+        "manifest": "dataset/manifest.json",
+        "manifest_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+        "split": "evaluation",
+        "assets_filter": [
+          "igea",
+          "horse",
+          "rocker_arm"
+        ],
+        "experiments": [
+          "main",
+          "ablation",
+          "sweep"
+        ],
+        "ratios": [
+          0.5,
+          0.2,
+          0.05
+        ],
+        "reps": 3,
+        "warmup": 1,
+        "seed": 20260921,
+        "samples": 4000,
+        "resolution": 512,
+        "strength": 12.0,
+        "strength_source": "--strength",
+        "weights": {
+          "saliency": 0.0,
+          "silhouette": 1.0,
+          "sharp": 0.0,
+          "visibility": 0.0
+        },
+        "effective_weights": {
+          "silhouette": 1.0
+        },
+        "lambdas": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          8.0,
+          12.0,
+          20.0
+        ],
+        "anchor_v01_strength": 8.0,
+        "save_lods": true,
+        "roi_group": "LOD_EvalROI",
+        "roi_threshold": 0.5,
+        "multiview": true,
+        "manual_protection": null,
+        "camera": null,
+        "preserve_seams": false,
+        "target_rule": "max(4, round(source_triangles * ratio))",
+        "importance_defaults": {
+          "sharp_angle": 45.0,
+          "silhouette_views": 64,
+          "silhouette_resolution": 256
+        },
+        "timing_order_rng": "numpy.random.default_rng([seed, asset_index, rep]).permutation(3)"
+      }
+    },
+    {
+      "path": "results\\evaluation\\quality_C",
+      "sha256": "39d58a8517874ddfb1587a2ce25586be916edb1606bca67c55051487b7a136d8",
+      "status": "completed",
+      "source_hashes_equal_to_new": false,
+      "blender_equal_to_new": true,
+      "config": {
+        "manifest": "dataset/manifest.json",
+        "manifest_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+        "split": "evaluation",
+        "assets_filter": [
+          "ogre",
+          "armadillo",
+          "beetle"
+        ],
+        "experiments": [
+          "main",
+          "ablation",
+          "sweep"
+        ],
+        "ratios": [
+          0.5,
+          0.2,
+          0.05
+        ],
+        "reps": 3,
+        "warmup": 1,
+        "seed": 20260921,
+        "samples": 4000,
+        "resolution": 512,
+        "strength": 12.0,
+        "strength_source": "--strength",
+        "weights": {
+          "saliency": 0.0,
+          "silhouette": 1.0,
+          "sharp": 0.0,
+          "visibility": 0.0
+        },
+        "effective_weights": {
+          "silhouette": 1.0
+        },
+        "lambdas": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          8.0,
+          12.0,
+          20.0
+        ],
+        "anchor_v01_strength": 8.0,
+        "save_lods": true,
+        "roi_group": "LOD_EvalROI",
+        "roi_threshold": 0.5,
+        "multiview": true,
+        "manual_protection": null,
+        "camera": null,
+        "preserve_seams": false,
+        "target_rule": "max(4, round(source_triangles * ratio))",
+        "importance_defaults": {
+          "sharp_angle": 45.0,
+          "silhouette_views": 64,
+          "silhouette_resolution": 256
+        },
+        "timing_order_rng": "numpy.random.default_rng([seed, asset_index, rep]).permutation(3)"
+      }
+    },
+    {
+      "path": "revision-2026-11-03\\experiments\\heldout",
+      "sha256": "7d0c0ec5fcf38e67d6ed776e3e796d3fc8bc2e4d3d0dc77dd9a856428df71bb2",
+      "status": "completed",
+      "source_hashes_equal_to_new": true,
+      "blender_equal_to_new": true,
+      "config": {
+        "manifest": "revision-2026-11-03/experiments/manifest.json",
+        "manifest_sha256": "1268dfb0812136f7b81b51947956b19e0b3438f38610d97358666aba25837b12",
+        "split": "evaluation",
+        "assets_filter": [],
+        "experiments": [
+          "main"
+        ],
+        "ratios": [
+          0.05
+        ],
+        "reps": 3,
+        "warmup": 1,
+        "seed": 20260921,
+        "samples": 4000,
+        "resolution": 512,
+        "strength": 12.0,
+        "strength_source": "--strength",
+        "weights": {
+          "saliency": 0.0,
+          "silhouette": 1.0,
+          "sharp": 0.0,
+          "visibility": 0.0
+        },
+        "effective_weights": {
+          "silhouette": 1.0
+        },
+        "lambdas": [
+          0.0,
+          2.0,
+          5.0,
+          10.0,
+          20.0,
+          50.0
+        ],
+        "anchor_v01_strength": 8.0,
+        "save_lods": true,
+        "roi_group": "LOD_EvalROI",
+        "roi_threshold": 0.5,
+        "multiview": true,
+        "manual_protection": null,
+        "camera": null,
+        "preserve_seams": false,
+        "target_rule": "max(4, round(source_triangles * ratio))",
+        "importance_defaults": {
+          "sharp_angle": 45.0,
+          "silhouette_views": 64,
+          "silhouette_resolution": 256
+        },
+        "timing_order_rng": "numpy.random.default_rng([seed, asset_index, rep]).permutation(3)"
+      }
+    }
+  ],
+  "original_code_unchanged": true,
+  "protocol_sha256": "7b0258ab72f2cea189f1b8c1a2b3ecec23856569eb07cffc43197323cc0816e5",
+  "orientation_sha256": "7e4477d92168ce45fab87d929779e11ed8be111b23cbba880bb7c7493fd1539f",
+  "manifest_sha256": "1268dfb0812136f7b81b51947956b19e0b3438f38610d97358666aba25837b12",
+  "raw_sha256": "09fa02be8fe209c9407354bb7cdb669c717ed9198855798f48e74d7141acd367"
+}

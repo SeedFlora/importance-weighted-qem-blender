@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "harness": "scripts/run_experiment.py",
+  "config": {
+    "manifest": "dataset/manifest.json",
+    "manifest_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+    "split": "tuning",
+    "assets_filter": [],
+    "experiments": [
+      "sweep"
+    ],
+    "ratios": [
+      0.5,
+      0.2,
+      0.05
+    ],
+    "reps": 3,
+    "warmup": 1,
+    "seed": 20260921,
+    "samples": 4000,
+    "resolution": 128,
+    "strength": 10.0,
+    "strength_source": "smart_lod/pipeline.py DEFAULT_STRENGTH",
+    "weights": {
+      "saliency": 0.2,
+      "silhouette": 0.6,
+      "sharp": 0.2,
+      "visibility": 0.0
+    },
+    "effective_weights": {
+      "saliency": 0.2,
+      "silhouette": 0.6,
+      "sharp": 0.2
+    },
+    "lambdas": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      8.0,
+      12.0,
+      20.0
+    ],
+    "anchor_v01_strength": 8.0,
+    "save_lods": false,
+    "roi_group": "LOD_EvalROI",
+    "roi_threshold": 0.5,
+    "multiview": true,
+    "manual_protection": null,
+    "camera": null,
+    "preserve_seams": false,
+    "target_rule": "max(4, round(source_triangles * ratio))",
+    "importance_defaults": {
+      "sharp_angle": 45.0,
+      "silhouette_views": 24,
+      "silhouette_resolution": 256
+    },
+    "timing_order_rng": "numpy.random.default_rng([seed, asset_index, rep]).permutation(3)"
+  },
+  "session_id": "f03bbaff7c8b",
+  "started_utc": "2026-09-21T04:41:49+00:00",
+  "ended_utc": "2026-09-21T04:43:09+00:00",
+  "status": "completed",
+  "resumed": false,
+  "assets": [
+    "car",
+    "suzanne",
+    "spot"
+  ],
+  "blender_version": "5.1.2",
+  "blender_build_hash": "ec6e62d40fa9",
+  "python_version": "3.13.9",
+  "numpy_version": "2.3.4",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "cpu_name": "12th Gen Intel(R) Core(TM) i7-12700H",
+  "logical_cores": 20,
+  "ram_bytes": 34070847488,
+  "thread_env": {},
+  "extension": {
+    "manifest_version": "0.2.0",
+    "pipeline_extension_version": "0.2.0"
+  },
+  "source_sha256": {
+    "smart_lod/__init__.py": "3d817dd1a415f7e5cd5049c220b99b72bfd00bf4e12438dcbfd61c47ae76cec3",
+    "smart_lod/geometry.py": "48f35eb199ec34db078a07d5f00e699e725e4a10bed49037f7e3ab579eb0ee7b",
+    "smart_lod/metrics.py": "e7b992adcffc5e0cf377fcdfb27a51543c0e21da5dcd9369d5b1fd19fadcc6c3",
+    "smart_lod/perception.py": "e32ef4888d0bffa508920174f2f80bcb0dfe28457c09dc6f967d9fc2bedbcd25",
+    "smart_lod/pipeline.py": "85634a92cc0f7ad23321b613a68fa1f142ac6aeac6e2df188315cb44b86f6c5e",
+    "smart_lod/qem.py": "f5c773aed65ffa50882045867ece2f7ee0fbef8c91c92b62228a785712749fc8",
+    "smart_lod/raster.py": "9ca5488e2dcd0d655604e452d4e37f5b78fa453e89ffc5fa2618bb1466ebe588",
+    "smart_lod/ui.py": "6ac9e9f5fa71b3d4ecea9a1980b4fe5680193ead5885eb8ea1fde3a96ceb1e5d",
+    "scripts/run_experiment.py": "c064e4e14689d8b817e7b647c364611e86cec290051392de584e525027588d6e"
+  },
+  "sessions": [
+    {
+      "session_id": "f03bbaff7c8b",
+      "started_utc": "2026-09-21T04:41:49+00:00",
+      "ended_utc": "2026-09-21T04:43:09+00:00",
+      "status": "completed",
+      "resumed": false,
+      "assets": [
+        "car",
+        "suzanne",
+        "spot"
+      ],
+      "blender_version": "5.1.2",
+      "blender_build_hash": "ec6e62d40fa9",
+      "python_version": "3.13.9",
+      "numpy_version": "2.3.4",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "machine": "AMD64",
+      "cpu_name": "12th Gen Intel(R) Core(TM) i7-12700H",
+      "logical_cores": 20,
+      "ram_bytes": 34070847488,
+      "thread_env": {},
+      "extension": {
+        "manifest_version": "0.2.0",
+        "pipeline_extension_version": "0.2.0"
+      },
+      "source_sha256": {
+        "smart_lod/__init__.py": "3d817dd1a415f7e5cd5049c220b99b72bfd00bf4e12438dcbfd61c47ae76cec3",
+        "smart_lod/geometry.py": "48f35eb199ec34db078a07d5f00e699e725e4a10bed49037f7e3ab579eb0ee7b",
+        "smart_lod/metrics.py": "e7b992adcffc5e0cf377fcdfb27a51543c0e21da5dcd9369d5b1fd19fadcc6c3",
+        "smart_lod/perception.py": "e32ef4888d0bffa508920174f2f80bcb0dfe28457c09dc6f967d9fc2bedbcd25",
+        "smart_lod/pipeline.py": "85634a92cc0f7ad23321b613a68fa1f142ac6aeac6e2df188315cb44b86f6c5e",
+        "smart_lod/qem.py": "f5c773aed65ffa50882045867ece2f7ee0fbef8c91c92b62228a785712749fc8",
+        "smart_lod/raster.py": "9ca5488e2dcd0d655604e452d4e37f5b78fa453e89ffc5fa2618bb1466ebe588",
+        "smart_lod/ui.py": "6ac9e9f5fa71b3d4ecea9a1980b4fe5680193ead5885eb8ea1fde3a96ceb1e5d",
+        "scripts/run_experiment.py": "c064e4e14689d8b817e7b647c364611e86cec290051392de584e525027588d6e"
+      }
+    }
+  ]
+}

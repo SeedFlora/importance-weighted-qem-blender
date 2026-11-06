@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-11-03T21:23:36+07:00",
+  "differing_files": {
+    "smart_lod/perception.py": {
+      "historical": "54bb85c0b3a94891b4d1e2f833740f96b8c09aeb57ccdf3905cf8a604d555627",
+      "frozen_current": "4a681c8498325bbc29417b92b3864ca895c384299864e57535008a82141306b0"
+    },
+    "smart_lod/pipeline.py": {
+      "historical": "b75ddbb1f09079d226a7c4164620ab923547f110b67636de6ee98ad2042ce58e",
+      "frozen_current": "cc13d8687fa467dce85b1309e0a6140839c4614cb5be28bf96d48950f3d4b6d8"
+    },
+    "smart_lod/ui.py": {
+      "historical": "a70a31159f48abf3fd178fa1d9710fd967c55af9d20b3a95f39c74970c7da102",
+      "frozen_current": "c7ae1a0ea0ea047f0b2c9fa36fd0abb7c0cc3981480554566ece1073cf39d73a"
+    }
+  },
+  "addendum_sha256": "adacfed281dc13c752dce25dc94eaf29b10d3c06c1426070d00f08981f2dad6f"
+}

@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-03T21:20:47+07:00",
+  "basis": "Source-only point projections and coordinate extents, source_orientation.png; before preprocessing and method outcomes. Native Z-up Nefertiti/Lucy require cancellation of original OBJ Y-up conversion. Happy Buddha is native Y-up. Source yaw retained for all.",
+  "assets": {
+    "nefertiti": {
+      "native_up": "+Z",
+      "rotation_after_OBJ_axes_xyz_degrees": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "lucy": {
+      "native_up": "+Z",
+      "rotation_after_OBJ_axes_xyz_degrees": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "happy-buddha": {
+      "native_up": "+Y",
+      "rotation_after_OBJ_axes_xyz_degrees": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "name": "nefertiti",
+      "file": "nefertiti.obj",
+      "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/nefertiti.obj",
+      "sha256": "19e39748b145092878cc4faafd050505eb5991c5d3e497be2b4575673fa87968",
+      "bytes": 3660678,
+      "retrieved_at": "2026-11-03T21:19:51+07:00",
+      "upstream_commit": "8a4f8642acaf43f9cd7b67858a1502e1055ef202",
+      "readme_credit_lines": [
+        "| Nefertiti | ![](data/nefertiti.png) | [.zip](data/nefertiti.zip),[.z01](data/nefertiti.z01),[.z02](data/nefertiti.z02),[.z03](data/nefertiti.z03),[.z04](data/nefertiti.z04) | [.obj](data/nefertiti.obj) | [Berlin Egyptian Museum](https://www.thingiverse.com/thing:3974391) | missing |"
+      ],
+      "collection": "https://github.com/alecjacobson/common-3d-test-models",
+      "usage_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed."
+    },
+    {
+      "name": "lucy",
+      "file": "lucy.obj",
+      "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/lucy.obj",
+      "sha256": "ea54611a3466bc903a107fd825409344562b8c4a8f191bbdc88ce380bebd0911",
+      "bytes": 4664191,
+      "retrieved_at": "2026-11-03T21:19:51+07:00",
+      "upstream_commit": "8a4f8642acaf43f9cd7b67858a1502e1055ef202",
+      "readme_credit_lines": [
+        "| Lucy | ![](data/lucy.png)  |  [.zip](data/lucy.zip),[.z01](data/lucy.z01),[.z02](data/lucy.z02),[.z03](data/lucy.z03),[.z04](data/lucy.z04) ,[.z05](data/lucy.z05)  |  [.obj](data/lucy.obj)  |  [Stanford University](http://graphics.stanford.edu/data/3Dscanrep/)  | missing |"
+      ],
+      "collection": "https://github.com/alecjacobson/common-3d-test-models",
+      "usage_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed."
+    },
+    {
+      "name": "happy-buddha",
+      "file": "happy-buddha.obj",
+      "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/happy.obj",
+      "sha256": "8ce5a4a7161efd97dabc8eeb281824fac1b17c9ba2cb0c2c6f350cd05982058c",
+      "bytes": 4648727,
+      "retrieved_at": "2026-11-03T21:19:52+07:00",
+      "upstream_commit": "8a4f8642acaf43f9cd7b67858a1502e1055ef202",
+      "readme_credit_lines": [
+        "| Happy Buddha | ![](data/happy.png) | [.zip](data/happy.zip) | [.obj](data/happy.obj) | [Stanford](http://graphics.stanford.edu/data/3Dscanrep/) | [dblp](https://dblp.uni-trier.de/rec/bibtex/conf/siggraph/CurlessL96) |"
+      ],
+      "collection": "https://github.com/alecjacobson/common-3d-test-models",
+      "usage_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed."
+    }
+  ]
+}

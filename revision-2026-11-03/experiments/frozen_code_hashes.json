@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-11-03T21:19:48+07:00",
+  "sha256": {
+    "smart_lod\\__init__.py": "3d817dd1a415f7e5cd5049c220b99b72bfd00bf4e12438dcbfd61c47ae76cec3",
+    "smart_lod\\geometry.py": "3b7ba8db2b905080769f37d35268626fab3652c642afd1f639a89112386ef876",
+    "smart_lod\\metrics.py": "a52cb557c8ef755fa82df5738bb7ecba5da4150520396c52924f7a1fb664a3ab",
+    "smart_lod\\perception.py": "4a681c8498325bbc29417b92b3864ca895c384299864e57535008a82141306b0",
+    "smart_lod\\pipeline.py": "cc13d8687fa467dce85b1309e0a6140839c4614cb5be28bf96d48950f3d4b6d8",
+    "smart_lod\\qem.py": "aecf76ad47c486ec61d1cd904fac905997dcd3d3e25fbfafa20f8457b0b1cbfa",
+    "smart_lod\\raster.py": "b253b431066b3c739e65a6f4083fface5a25289e47e69ff3f78ab5c2937e2d4a",
+    "smart_lod\\ui.py": "c7ae1a0ea0ea047f0b2c9fa36fd0abb7c0cc3981480554566ece1073cf39d73a",
+    "scripts\\analyze_results.py": "368255740c8fcbbbadd6fbf808f314523f79b673fdb93018fcedad0810e4c9ba",
+    "scripts\\analyze_user_study.py": "f28552957095517b4ba260df77035997f9dd359c194d375ee5f208fe3275bb8a",
+    "scripts\\build_extension.py": "444b16685c0cae642fe49c0a46bbc0926eeb242a8d5490122d79f9943dd375b8",
+    "scripts\\create_demo.py": "de7680b3710b2f5d8f336aee7a43ea9bd6a744d6e37a4477b48dbddb56ba2bbb",
+    "scripts\\fetch_assets.py": "9db552e16973d870ff0956ce01f36898527ea2c3b521633e6b9741de55f92199",
+    "scripts\\make_dataset.py": "0ee0e3cea31715fb32686459b1278d4e186ee4ef6b33e4ca47749ca9fb6af8df",
+    "scripts\\make_user_study.py": "0b2822ef5350efac5478930eb2f16cc6f29766faae8ce97c9d141426d4595741",
+    "scripts\\run_experiment.py": "6863793f65b314e7a07501ce2428d8f8eccdbdfbb247e6f0a5c436eeb3687cd0",
+    "scripts\\run_mask_experiment.py": "98541e857cf66da274a3a758f76bb05c4c216b04349480c23843931bdd2490cf",
+    "scripts\\run_tests.py": "723c441a6cf4a5d304cd807fd3b95ab2014c178cb5db2e4180b0997f86794ad9"
+  }
+}

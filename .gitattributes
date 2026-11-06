@@ -1,0 +1,2 @@
+# Preserve frozen archive bytes across clones and core.autocrlf settings.
+* -text

@@ -1,0 +1,15 @@
+--- historical_hash_matched_perception.py
++++ current_frozen_perception.py
+@@ -26,7 +26,11 @@
+ from .raster import orthographic_basis, rasterize
+ 
+ 
+-DEFAULT_WEIGHTS = {'saliency': 0.35, 'silhouette': 0.40, 'sharp': 0.25, 'visibility': 0.15}
++# Chosen on the tuning split only (results/tuning/PROTOCOL.md, Amandemen 1; selection.txt):
++# silhouette alone gave the largest 13-view IoU gain within the Chamfer constraint, while
++# saliency alone worsened IoU and ROI error there. Saliency and sharp remain available in
++# the UI; visibility is used only when a scene camera is enabled.
++DEFAULT_WEIGHTS = {'saliency': 0.0, 'silhouette': 1.0, 'sharp': 0.0, 'visibility': 0.15}
+ CHANNELS = ('saliency', 'silhouette', 'sharp', 'visibility')
+ # Silhouette channel defaults (the UI properties read these). 64 hemisphere
+ # views: contour tolerance 10.1 degrees, see outer_silhouette.

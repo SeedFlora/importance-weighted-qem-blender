@@ -1,0 +1,1161 @@
+{
+  "schema_version": 1,
+  "paper": "Importance-Weighted Quadric Error Metrics for Perceptual Level-of-Detail Generation in Blender",
+  "scope": "Public code, numeric results, frozen protocols and asset provenance; no manuscript, third-party geometry/renders, private study data or administration.",
+  "original_project_label": "Author-held local Smart LOD research project",
+  "license": "Existing project code licence: GPL-3.0-or-later. No new licence assigned to third-party assets.",
+  "historical_records": "Unchanged protocol and code-hash records retain original historical hashes. Public derivatives have explicit source/public hashes below; original records remain local. No trusted external timestamp or DOI is claimed.",
+  "redactions": [
+    {
+      "path": "results/tuning/archive_pre_review/W1_default/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W2_silhouette/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W3_saliency/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W4_silheavy/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W5_nosharp/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/W1_default/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/W2_silhouette/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/W3_saliency/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/W4_silheavy/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/tuning/W5_nosharp/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_A/raw.jsonl",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_A/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_B/raw.jsonl",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_B/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_C/raw.jsonl",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/quality_C/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/timing/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "results/evaluation/explore_W1/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/integrity.json",
+      "fields_changed": 7,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "revision-2026-11-03/experiments/heldout/environment.json",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    },
+    {
+      "path": "revision-2026-11-03/experiments/heldout/raw.jsonl",
+      "fields_changed": 3,
+      "reason": "Personal absolute project paths made repository-relative; argv omitted. Research numbers, outcomes, source hashes, hardware/software and seeds preserved."
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "source_relative_path": "LICENSE",
+      "source_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "public_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/__init__.py",
+      "source_relative_path": "smart_lod/__init__.py",
+      "source_sha256": "3d817dd1a415f7e5cd5049c220b99b72bfd00bf4e12438dcbfd61c47ae76cec3",
+      "public_sha256": "3d817dd1a415f7e5cd5049c220b99b72bfd00bf4e12438dcbfd61c47ae76cec3",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/geometry.py",
+      "source_relative_path": "smart_lod/geometry.py",
+      "source_sha256": "3b7ba8db2b905080769f37d35268626fab3652c642afd1f639a89112386ef876",
+      "public_sha256": "3b7ba8db2b905080769f37d35268626fab3652c642afd1f639a89112386ef876",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/metrics.py",
+      "source_relative_path": "smart_lod/metrics.py",
+      "source_sha256": "a52cb557c8ef755fa82df5738bb7ecba5da4150520396c52924f7a1fb664a3ab",
+      "public_sha256": "a52cb557c8ef755fa82df5738bb7ecba5da4150520396c52924f7a1fb664a3ab",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/perception.py",
+      "source_relative_path": "smart_lod/perception.py",
+      "source_sha256": "4a681c8498325bbc29417b92b3864ca895c384299864e57535008a82141306b0",
+      "public_sha256": "4a681c8498325bbc29417b92b3864ca895c384299864e57535008a82141306b0",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/pipeline.py",
+      "source_relative_path": "smart_lod/pipeline.py",
+      "source_sha256": "cc13d8687fa467dce85b1309e0a6140839c4614cb5be28bf96d48950f3d4b6d8",
+      "public_sha256": "cc13d8687fa467dce85b1309e0a6140839c4614cb5be28bf96d48950f3d4b6d8",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/qem.py",
+      "source_relative_path": "smart_lod/qem.py",
+      "source_sha256": "aecf76ad47c486ec61d1cd904fac905997dcd3d3e25fbfafa20f8457b0b1cbfa",
+      "public_sha256": "aecf76ad47c486ec61d1cd904fac905997dcd3d3e25fbfafa20f8457b0b1cbfa",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/raster.py",
+      "source_relative_path": "smart_lod/raster.py",
+      "source_sha256": "b253b431066b3c739e65a6f4083fface5a25289e47e69ff3f78ab5c2937e2d4a",
+      "public_sha256": "b253b431066b3c739e65a6f4083fface5a25289e47e69ff3f78ab5c2937e2d4a",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/ui.py",
+      "source_relative_path": "smart_lod/ui.py",
+      "source_sha256": "c7ae1a0ea0ea047f0b2c9fa36fd0abb7c0cc3981480554566ece1073cf39d73a",
+      "public_sha256": "c7ae1a0ea0ea047f0b2c9fa36fd0abb7c0cc3981480554566ece1073cf39d73a",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "smart_lod/blender_manifest.toml",
+      "source_relative_path": "smart_lod/blender_manifest.toml",
+      "source_sha256": "3441f55832274479f22f0c7adf60fdfcc78e4421aa3fa7be4a1568605cc20d7f",
+      "public_sha256": "3441f55832274479f22f0c7adf60fdfcc78e4421aa3fa7be4a1568605cc20d7f",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/analyze_results.py",
+      "source_relative_path": "scripts/analyze_results.py",
+      "source_sha256": "368255740c8fcbbbadd6fbf808f314523f79b673fdb93018fcedad0810e4c9ba",
+      "public_sha256": "368255740c8fcbbbadd6fbf808f314523f79b673fdb93018fcedad0810e4c9ba",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/analyze_user_study.py",
+      "source_relative_path": "scripts/analyze_user_study.py",
+      "source_sha256": "f28552957095517b4ba260df77035997f9dd359c194d375ee5f208fe3275bb8a",
+      "public_sha256": "f28552957095517b4ba260df77035997f9dd359c194d375ee5f208fe3275bb8a",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/build_extension.py",
+      "source_relative_path": "scripts/build_extension.py",
+      "source_sha256": "444b16685c0cae642fe49c0a46bbc0926eeb242a8d5490122d79f9943dd375b8",
+      "public_sha256": "444b16685c0cae642fe49c0a46bbc0926eeb242a8d5490122d79f9943dd375b8",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/create_demo.py",
+      "source_relative_path": "scripts/create_demo.py",
+      "source_sha256": "de7680b3710b2f5d8f336aee7a43ea9bd6a744d6e37a4477b48dbddb56ba2bbb",
+      "public_sha256": "de7680b3710b2f5d8f336aee7a43ea9bd6a744d6e37a4477b48dbddb56ba2bbb",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/fetch_assets.py",
+      "source_relative_path": "scripts/fetch_assets.py",
+      "source_sha256": "9db552e16973d870ff0956ce01f36898527ea2c3b521633e6b9741de55f92199",
+      "public_sha256": "9db552e16973d870ff0956ce01f36898527ea2c3b521633e6b9741de55f92199",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/make_dataset.py",
+      "source_relative_path": "scripts/make_dataset.py",
+      "source_sha256": "0ee0e3cea31715fb32686459b1278d4e186ee4ef6b33e4ca47749ca9fb6af8df",
+      "public_sha256": "0ee0e3cea31715fb32686459b1278d4e186ee4ef6b33e4ca47749ca9fb6af8df",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/make_user_study.py",
+      "source_relative_path": "scripts/make_user_study.py",
+      "source_sha256": "0b2822ef5350efac5478930eb2f16cc6f29766faae8ce97c9d141426d4595741",
+      "public_sha256": "0b2822ef5350efac5478930eb2f16cc6f29766faae8ce97c9d141426d4595741",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "source_relative_path": "scripts/run_experiment.py",
+      "source_sha256": "6863793f65b314e7a07501ce2428d8f8eccdbdfbb247e6f0a5c436eeb3687cd0",
+      "public_sha256": "6863793f65b314e7a07501ce2428d8f8eccdbdfbb247e6f0a5c436eeb3687cd0",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/run_mask_experiment.py",
+      "source_relative_path": "scripts/run_mask_experiment.py",
+      "source_sha256": "98541e857cf66da274a3a758f76bb05c4c216b04349480c23843931bdd2490cf",
+      "public_sha256": "98541e857cf66da274a3a758f76bb05c4c216b04349480c23843931bdd2490cf",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "scripts/run_tests.py",
+      "source_relative_path": "scripts/run_tests.py",
+      "source_sha256": "723c441a6cf4a5d304cd807fd3b95ab2014c178cb5db2e4180b0997f86794ad9",
+      "public_sha256": "723c441a6cf4a5d304cd807fd3b95ab2014c178cb5db2e4180b0997f86794ad9",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_analysis.py",
+      "source_relative_path": "tests/test_analysis.py",
+      "source_sha256": "09f169f355f7cb89933941c353a1a8fc7bc2c0fbcb97e0b23c3d69492ba242de",
+      "public_sha256": "09f169f355f7cb89933941c353a1a8fc7bc2c0fbcb97e0b23c3d69492ba242de",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_integration_blender.py",
+      "source_relative_path": "tests/test_integration_blender.py",
+      "source_sha256": "01ba07d64d498eb6f328c9f7f3bc40a17235f5fb63d1cc93241c7dc44e421716",
+      "public_sha256": "01ba07d64d498eb6f328c9f7f3bc40a17235f5fb63d1cc93241c7dc44e421716",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_metrics_blender.py",
+      "source_relative_path": "tests/test_metrics_blender.py",
+      "source_sha256": "149ab16fe6a8dc40a5531315103b2f66b24a07b2fba3748c242692242663e3c2",
+      "public_sha256": "149ab16fe6a8dc40a5531315103b2f66b24a07b2fba3748c242692242663e3c2",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_perception.py",
+      "source_relative_path": "tests/test_perception.py",
+      "source_sha256": "fd042bb5e98491aefa5cdd0791303655aaaa896b101e72ee7a24b0ef863a210e",
+      "public_sha256": "fd042bb5e98491aefa5cdd0791303655aaaa896b101e72ee7a24b0ef863a210e",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_perception_blender.py",
+      "source_relative_path": "tests/test_perception_blender.py",
+      "source_sha256": "adc6788269a83361bb163c625a1a886fb88a28087e3faeacbb24f24bd672e9d6",
+      "public_sha256": "adc6788269a83361bb163c625a1a886fb88a28087e3faeacbb24f24bd672e9d6",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_qem.py",
+      "source_relative_path": "tests/test_qem.py",
+      "source_sha256": "053e22832dbab2a70dea8ebb5c7f7bd6e899fe26250a79e645aed0355e04f712",
+      "public_sha256": "053e22832dbab2a70dea8ebb5c7f7bd6e899fe26250a79e645aed0355e04f712",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_raster.py",
+      "source_relative_path": "tests/test_raster.py",
+      "source_sha256": "e42332a52c27d1dec44b23632e747108cd8719fe6a3402abfa1ff61fffdc568c",
+      "public_sha256": "e42332a52c27d1dec44b23632e747108cd8719fe6a3402abfa1ff61fffdc568c",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/test_user_study.py",
+      "source_relative_path": "tests/test_user_study.py",
+      "source_sha256": "a19d85762e7123bae03d77a7354068201172f2ab91b757e6e02cea0aa29deea3",
+      "public_sha256": "a19d85762e7123bae03d77a7354068201172f2ab91b757e6e02cea0aa29deea3",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "tests/reference/qem_v01.py",
+      "source_relative_path": "tests/reference/qem_v01.py",
+      "source_sha256": "8eb7ca7754d2f33747212ae5faf0b802200aebdc0d832a58d1c136c2cd540f11",
+      "public_sha256": "8eb7ca7754d2f33747212ae5faf0b802200aebdc0d832a58d1c136c2cd540f11",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "docs/RESEARCH.md",
+      "source_relative_path": "docs/RESEARCH.md",
+      "source_sha256": "44387b9b19103931f5a1c0e4586a58de46226dfac71c9babe5b99a47badc232f",
+      "public_sha256": "44387b9b19103931f5a1c0e4586a58de46226dfac71c9babe5b99a47badc232f",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "docs/USER_STUDY.csv",
+      "source_relative_path": "docs/USER_STUDY.csv",
+      "source_sha256": "06bf7e8377fb5d78f15b963a15bbbfeefe1d0edbef8b402ef6f7832635555502",
+      "public_sha256": "06bf7e8377fb5d78f15b963a15bbbfeefe1d0edbef8b402ef6f7832635555502",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "dataset/manifest.json",
+      "source_relative_path": "dataset/manifest.json",
+      "source_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+      "public_sha256": "e6c43788aa8a6d4ce19faa222a1f335943bb77047f413c5a5798fa8cb72547bc",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "dataset/external/SOURCES.json",
+      "source_relative_path": "dataset/external/SOURCES.json",
+      "source_sha256": "b014cce9419d4000a963da01c79171c242af62b5b1f9caea0b6410d6a94b7063",
+      "public_sha256": "b014cce9419d4000a963da01c79171c242af62b5b1f9caea0b6410d6a94b7063",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/PROTOCOL.md",
+      "source_relative_path": "results/tuning/PROTOCOL.md",
+      "source_sha256": "ff26e601e6f6fb63fd66c2168b2e28140c2deb7671694885e83f06fa90e8ffe2",
+      "public_sha256": "ff26e601e6f6fb63fd66c2168b2e28140c2deb7671694885e83f06fa90e8ffe2",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/select_config.py",
+      "source_relative_path": "results/tuning/select_config.py",
+      "source_sha256": "2111ede93d17489454fa9eb6fb73e58ad4090743262bb4897dd765612d3fc9c9",
+      "public_sha256": "2111ede93d17489454fa9eb6fb73e58ad4090743262bb4897dd765612d3fc9c9",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/selection.txt",
+      "source_relative_path": "results/tuning/selection.txt",
+      "source_sha256": "ab2cd6ea2a33a3d8a681400e53846188981ce6a4a68b953422ecd8d74fc72d90",
+      "public_sha256": "ab2cd6ea2a33a3d8a681400e53846188981ce6a4a68b953422ecd8d74fc72d90",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/PREREGISTRATION.md",
+      "source_relative_path": "results/evaluation/PREREGISTRATION.md",
+      "source_sha256": "03813bcad290794493c861dbf94192491b7c9e3ea7263c423f2f63d8e0e2eb92",
+      "public_sha256": "03813bcad290794493c861dbf94192491b7c9e3ea7263c423f2f63d8e0e2eb92",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/run_all.sh",
+      "source_relative_path": "results/evaluation/run_all.sh",
+      "source_sha256": "075b7858f2fcf3465eaa67c9ff78b3dabab630ab711619404665be319346a81c",
+      "public_sha256": "075b7858f2fcf3465eaa67c9ff78b3dabab630ab711619404665be319346a81c",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W1_default/environment.json",
+      "source_relative_path": "results/tuning/archive_pre_review/W1_default/environment.json",
+      "source_sha256": "7a12d4dea0d2dcfb13b4313f775153a303b506676850f34c93581466da13c1e6",
+      "public_sha256": "e163ec1ecb82ad59e556b16e56cc3a36f77cdeef867a41917c05568ac8e05237",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W1_default/raw.jsonl",
+      "source_relative_path": "results/tuning/archive_pre_review/W1_default/raw.jsonl",
+      "source_sha256": "63fd2c02d94d835866710fa41ea7245d179d719bd90c162edd498c7c00ef0928",
+      "public_sha256": "63fd2c02d94d835866710fa41ea7245d179d719bd90c162edd498c7c00ef0928",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W2_silhouette/environment.json",
+      "source_relative_path": "results/tuning/archive_pre_review/W2_silhouette/environment.json",
+      "source_sha256": "3ed878968852f414622fef2eaa6a0111625867bdd56c987143464145e686c96e",
+      "public_sha256": "25933f1918bde07c10a1e62068584ed22c80fff764b37368e907821c8f5f5110",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W2_silhouette/raw.jsonl",
+      "source_relative_path": "results/tuning/archive_pre_review/W2_silhouette/raw.jsonl",
+      "source_sha256": "204c2b4f773cb7452753434d0a6913fde41d03cea3fae189435d67b747da3a97",
+      "public_sha256": "204c2b4f773cb7452753434d0a6913fde41d03cea3fae189435d67b747da3a97",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W3_saliency/environment.json",
+      "source_relative_path": "results/tuning/archive_pre_review/W3_saliency/environment.json",
+      "source_sha256": "a1ed80c6e81c9851bac58cc617d446411d9a5b7ab3dd22b0ee656a0492625dd1",
+      "public_sha256": "e28fd42c19b1be08087a9600725b1371da71189033008feb7b96a07cfeb80340",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W3_saliency/raw.jsonl",
+      "source_relative_path": "results/tuning/archive_pre_review/W3_saliency/raw.jsonl",
+      "source_sha256": "012970282787e1418dcca1703136d3d190f0be840432c959abff33e4d4994e72",
+      "public_sha256": "012970282787e1418dcca1703136d3d190f0be840432c959abff33e4d4994e72",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W4_silheavy/environment.json",
+      "source_relative_path": "results/tuning/archive_pre_review/W4_silheavy/environment.json",
+      "source_sha256": "ea413cf29df69fb3524cd7a3603b1632f80d2963be7783f500c18fbf4fd5cd50",
+      "public_sha256": "22cf2921bc7c943d60935d3a562a46b2f8e6412f3fff7eec92cad792447137ee",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W4_silheavy/raw.jsonl",
+      "source_relative_path": "results/tuning/archive_pre_review/W4_silheavy/raw.jsonl",
+      "source_sha256": "c56bce6ad44bcf5fa6e8f374ae9852c6ed540b37f551f544078c0ce43231476b",
+      "public_sha256": "c56bce6ad44bcf5fa6e8f374ae9852c6ed540b37f551f544078c0ce43231476b",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W5_nosharp/environment.json",
+      "source_relative_path": "results/tuning/archive_pre_review/W5_nosharp/environment.json",
+      "source_sha256": "bd463adcc0ecf72fc9f39e43bfc5b601ee58f347bc60b9de60998ae37aa49af2",
+      "public_sha256": "5bea0b51ab6995aa140c85c9e3e8a16cb6d8ba3596185128cf3c5c06c12285b5",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/archive_pre_review/W5_nosharp/raw.jsonl",
+      "source_relative_path": "results/tuning/archive_pre_review/W5_nosharp/raw.jsonl",
+      "source_sha256": "9e23d6c6243822ede1bef867e60bebb745a30fed55d46a6035065a4e6922dc3c",
+      "public_sha256": "9e23d6c6243822ede1bef867e60bebb745a30fed55d46a6035065a4e6922dc3c",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/W1_default/environment.json",
+      "source_relative_path": "results/tuning/W1_default/environment.json",
+      "source_sha256": "b0b422596ceb5510c2961e026779df5fa5e15f1e6a24c14180dcede49448348f",
+      "public_sha256": "73484f4173e720aacce73b1e9be031528d53abde3e425d3e731e7bdf9abeaf79",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/W1_default/raw.jsonl",
+      "source_relative_path": "results/tuning/W1_default/raw.jsonl",
+      "source_sha256": "8fece225fbe0a742c61e0d148845bc22985df648dd388c20a097598e9e0d3244",
+      "public_sha256": "8fece225fbe0a742c61e0d148845bc22985df648dd388c20a097598e9e0d3244",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/W2_silhouette/environment.json",
+      "source_relative_path": "results/tuning/W2_silhouette/environment.json",
+      "source_sha256": "cf587d12589df6201f3166a302537754cfcd3a62fa49bb4f4fdbb2d5e0df7f09",
+      "public_sha256": "87645622505804bd4331d81a009fd8a540d581077226443bb16136b9b88d07b5",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/W2_silhouette/raw.jsonl",
+      "source_relative_path": "results/tuning/W2_silhouette/raw.jsonl",
+      "source_sha256": "00b50efd3a1e16d0267602ad13ca55ab60eafdbb560bf01ffe97371d1cd361a3",
+      "public_sha256": "00b50efd3a1e16d0267602ad13ca55ab60eafdbb560bf01ffe97371d1cd361a3",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/W3_saliency/environment.json",
+      "source_relative_path": "results/tuning/W3_saliency/environment.json",
+      "source_sha256": "21ef05c60ecec02d9c30f7dfb6af6c57e2719468e90dc114194d9df09891ee2d",
+      "public_sha256": "934a303f0d4fcd77086b9f4bd9236b315c5e96d8f715b57a9c5aa85de9f9dd6a",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/W3_saliency/raw.jsonl",
+      "source_relative_path": "results/tuning/W3_saliency/raw.jsonl",
+      "source_sha256": "26525b14ae0b280d994ea57d09abe531c7a8f5f7a2013c467cd769eda77c6231",
+      "public_sha256": "26525b14ae0b280d994ea57d09abe531c7a8f5f7a2013c467cd769eda77c6231",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/W4_silheavy/environment.json",
+      "source_relative_path": "results/tuning/W4_silheavy/environment.json",
+      "source_sha256": "ba2fea9c2a0fc6be05f9b58fb90b7a551f57273fc1e7a6400308bca13a7e2573",
+      "public_sha256": "afccf5ee994017742a59d1015e3f7b1ed20cb90e1d320b6b4e5344a2b9dcbd22",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/W4_silheavy/raw.jsonl",
+      "source_relative_path": "results/tuning/W4_silheavy/raw.jsonl",
+      "source_sha256": "2f3d70d0b815ef95ddd91238720e16fdfdc15d8803d5836ec347db234d235056",
+      "public_sha256": "2f3d70d0b815ef95ddd91238720e16fdfdc15d8803d5836ec347db234d235056",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/tuning/W5_nosharp/environment.json",
+      "source_relative_path": "results/tuning/W5_nosharp/environment.json",
+      "source_sha256": "13372fdc44f6048863eb19dcf8ebc0af7952435a860d60d6d71e12264eb4aa31",
+      "public_sha256": "e3243c53631ab976d2c3c7c1bc7584c15dac1337e699b44597fbe1fecbbf5b9b",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/tuning/W5_nosharp/raw.jsonl",
+      "source_relative_path": "results/tuning/W5_nosharp/raw.jsonl",
+      "source_sha256": "f3aed19fe6d0afbb84bf98c514d5386b697e61af3b5179b09fc22c2c7876d8ec",
+      "public_sha256": "f3aed19fe6d0afbb84bf98c514d5386b697e61af3b5179b09fc22c2c7876d8ec",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/quality_A/raw.jsonl",
+      "source_relative_path": "results/evaluation/quality_A/raw.jsonl",
+      "source_sha256": "bcb5733f4a9a454a6bfe66f829da07375ce531ebfe25690d2b7c749c55e826a7",
+      "public_sha256": "5acde530fabfe4c81228c23a385e62ea8f5e4ea07d851e796f00e426e8b5ee84",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "record[54].lods_file (absolute project path -> repository-relative path)",
+        "record[109].lods_file (absolute project path -> repository-relative path)",
+        "record[164].lods_file (absolute project path -> repository-relative path)"
+      ]
+    },
+    {
+      "path": "results/evaluation/quality_A/environment.json",
+      "source_relative_path": "results/evaluation/quality_A/environment.json",
+      "source_sha256": "b7e28c8c6ebc950c0b7560705a84686815367dcc3b93551b05a44a8b824a1984",
+      "public_sha256": "5567650a40e8a98a0b91f5abddbb0655152df93e87ddc93d1b2f25c6198c4b4e",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/evaluation/quality_B/raw.jsonl",
+      "source_relative_path": "results/evaluation/quality_B/raw.jsonl",
+      "source_sha256": "5ffcb386bbf6e937f5258cd9ca4dc8e54ebbb6c9aaae08a5e8eb588e8ea305eb",
+      "public_sha256": "c2039f69f948de698e024ae90b8afac6e2759f0acb3aa2e6631561c737fdae62",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "record[54].lods_file (absolute project path -> repository-relative path)",
+        "record[109].lods_file (absolute project path -> repository-relative path)",
+        "record[164].lods_file (absolute project path -> repository-relative path)"
+      ]
+    },
+    {
+      "path": "results/evaluation/quality_B/environment.json",
+      "source_relative_path": "results/evaluation/quality_B/environment.json",
+      "source_sha256": "072209e60466cb3aa94d179788673d81ee549def03065cdcdae80d3fd0099b78",
+      "public_sha256": "ad7cfa58c4edad93d3816fec6978050c055197e5decb8b54bb7eb268bff0947c",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/evaluation/quality_C/raw.jsonl",
+      "source_relative_path": "results/evaluation/quality_C/raw.jsonl",
+      "source_sha256": "8d125741ccd36c878c4d1b096e09747147875c09d29267820d42336fdc972c29",
+      "public_sha256": "f269e9d7a18a823a76cb163cf951f279a01a42e20f4f020b78c4e0d05a05cdc0",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "record[54].lods_file (absolute project path -> repository-relative path)",
+        "record[109].lods_file (absolute project path -> repository-relative path)",
+        "record[164].lods_file (absolute project path -> repository-relative path)"
+      ]
+    },
+    {
+      "path": "results/evaluation/quality_C/environment.json",
+      "source_relative_path": "results/evaluation/quality_C/environment.json",
+      "source_sha256": "39d58a8517874ddfb1587a2ce25586be916edb1606bca67c55051487b7a136d8",
+      "public_sha256": "5ac6fa65e32593f580cec046e40be6487f8b70c952403e1e568d73ddbb12287f",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/evaluation/timing/raw.jsonl",
+      "source_relative_path": "results/evaluation/timing/raw.jsonl",
+      "source_sha256": "c37f502013f9c01648489ef48f49a7974e50646360a7b79c34fce88d294d8a30",
+      "public_sha256": "c37f502013f9c01648489ef48f49a7974e50646360a7b79c34fce88d294d8a30",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/timing/environment.json",
+      "source_relative_path": "results/evaluation/timing/environment.json",
+      "source_sha256": "2f7b2e8e791e1e11a637eeec463064f211c55681ff33deea3123ca050abca173",
+      "public_sha256": "e5c7cad559ed0bac20e51d1f9f8b581afef2986a6f32a190898bdd3805fb50dc",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/evaluation/explore_W1/raw.jsonl",
+      "source_relative_path": "results/evaluation/explore_W1/raw.jsonl",
+      "source_sha256": "89e0eb392f95ee2a1dc37c957cfa04fd43357319c27854a753d9f5d1198af134",
+      "public_sha256": "89e0eb392f95ee2a1dc37c957cfa04fd43357319c27854a753d9f5d1198af134",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/explore_W1/environment.json",
+      "source_relative_path": "results/evaluation/explore_W1/environment.json",
+      "source_sha256": "c7602edcdb36584fcc2add350bb981e4f12112043e9ff1ec77eee9add25a8fdd",
+      "public_sha256": "c04109e816911f7e8052be767e55bb438fd1808e1c036bc45ed091a0781dd81d",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "results/evaluation/mask_assisted/raw.jsonl",
+      "source_relative_path": "results/evaluation/mask_assisted/raw.jsonl",
+      "source_sha256": "1705c2dd6bd313458a9effb6e02f2ad423cea0d0320b82077d308975b78a2485",
+      "public_sha256": "1705c2dd6bd313458a9effb6e02f2ad423cea0d0320b82077d308975b78a2485",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/mask_assisted/summary.md",
+      "source_relative_path": "results/evaluation/mask_assisted/summary.md",
+      "source_sha256": "c9550b974d858e051034423b6acab80533707bebe008786c0445583e990c3fd3",
+      "public_sha256": "c9550b974d858e051034423b6acab80533707bebe008786c0445583e990c3fd3",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/mask_assisted_stanford/raw.jsonl",
+      "source_relative_path": "results/evaluation/mask_assisted_stanford/raw.jsonl",
+      "source_sha256": "edea814e81081b4ec0b2c9cdd6ed56c0f10ec512e1e86328b96c8dd83dd045a8",
+      "public_sha256": "edea814e81081b4ec0b2c9cdd6ed56c0f10ec512e1e86328b96c8dd83dd045a8",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/mask_assisted_stanford/summary.md",
+      "source_relative_path": "results/evaluation/mask_assisted_stanford/summary.md",
+      "source_sha256": "f7f341e5746ba84869dfdf9e1a2554b4e4752578fe441f3857eab96d6759101b",
+      "public_sha256": "f7f341e5746ba84869dfdf9e1a2554b4e4752578fe441f3857eab96d6759101b",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/report.md",
+      "source_relative_path": "results/evaluation/analysis/report.md",
+      "source_sha256": "91509c26e4a4fe8ab3903e6420d87b4453b6790b0f259c14669652ce98d3f353",
+      "public_sha256": "91509c26e4a4fe8ab3903e6420d87b4453b6790b0f259c14669652ce98d3f353",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/ablation.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/ablation.csv",
+      "source_sha256": "10b9cb816109e9bcbebc5adb86c58e7198ec08e8e3ba8c87cce5ddb26c2ae387",
+      "public_sha256": "10b9cb816109e9bcbebc5adb86c58e7198ec08e8e3ba8c87cce5ddb26c2ae387",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/ablation.md",
+      "source_relative_path": "results/evaluation/analysis/tables/ablation.md",
+      "source_sha256": "5db002533e638f3ddce443728f58992522749fa92b3ab3bec3039b9a3f8bf2f4",
+      "public_sha256": "5db002533e638f3ddce443728f58992522749fa92b3ab3bec3039b9a3f8bf2f4",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/all_quality_rows.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/all_quality_rows.csv",
+      "source_sha256": "8e7f390fbe418126f6825116dea013bd893142eeb9e059ee480e73147e991b74",
+      "public_sha256": "8e7f390fbe418126f6825116dea013bd893142eeb9e059ee480e73147e991b74",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/all_quality_rows.md",
+      "source_relative_path": "results/evaluation/analysis/tables/all_quality_rows.md",
+      "source_sha256": "36be78448be7c7bcf716ddb0fa6359f028b593993c0d8bb937e4f82ce4602af9",
+      "public_sha256": "36be78448be7c7bcf716ddb0fa6359f028b593993c0d8bb937e4f82ce4602af9",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/lambda_sweep.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/lambda_sweep.csv",
+      "source_sha256": "9b90660aab8f11796eb694a8d6d1194feb5d32f9176063da419bf265064447a1",
+      "public_sha256": "9b90660aab8f11796eb694a8d6d1194feb5d32f9176063da419bf265064447a1",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/lambda_sweep.md",
+      "source_relative_path": "results/evaluation/analysis/tables/lambda_sweep.md",
+      "source_sha256": "557f3b5590fe470ced5d1d037cfccc975f5817c3b7f13bc32985bfea5752f2d2",
+      "public_sha256": "557f3b5590fe470ced5d1d037cfccc975f5817c3b7f13bc32985bfea5752f2d2",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/paired_by_category.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/paired_by_category.csv",
+      "source_sha256": "556580b22ed5deb7fd792fdd67e5558f661fb1d180b6bb0dc11572a53b683ec0",
+      "public_sha256": "556580b22ed5deb7fd792fdd67e5558f661fb1d180b6bb0dc11572a53b683ec0",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/paired_by_category.md",
+      "source_relative_path": "results/evaluation/analysis/tables/paired_by_category.md",
+      "source_sha256": "541c575457b650926d54d58d1ed1c9c6c4152a419d5b666f5821ed68baac2555",
+      "public_sha256": "541c575457b650926d54d58d1ed1c9c6c4152a419d5b666f5821ed68baac2555",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/paired_main.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/paired_main.csv",
+      "source_sha256": "06e1ca45d2566457e29da67b6353f929abba340863b33840d99e1708305ce3a6",
+      "public_sha256": "06e1ca45d2566457e29da67b6353f929abba340863b33840d99e1708305ce3a6",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/paired_main.md",
+      "source_relative_path": "results/evaluation/analysis/tables/paired_main.md",
+      "source_sha256": "6123aa91fc2a154e32969333d6cbe5063b3b1d9aa19d03769d9cac73ea383943",
+      "public_sha256": "6123aa91fc2a154e32969333d6cbe5063b3b1d9aa19d03769d9cac73ea383943",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/per_asset.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/per_asset.csv",
+      "source_sha256": "537cae80e6565ad5cbc2e046395b3f354d9a5294e4d079a2f569f9ba44fe2a52",
+      "public_sha256": "537cae80e6565ad5cbc2e046395b3f354d9a5294e4d079a2f569f9ba44fe2a52",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/per_asset.md",
+      "source_relative_path": "results/evaluation/analysis/tables/per_asset.md",
+      "source_sha256": "08701bfd6ee00a4c83dcb853d54d2ee3835798183dc14c48b6e7ddab2b9e3ff2",
+      "public_sha256": "08701bfd6ee00a4c83dcb853d54d2ee3835798183dc14c48b6e7ddab2b9e3ff2",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/timing.csv",
+      "source_relative_path": "results/evaluation/analysis/tables/timing.csv",
+      "source_sha256": "6bd724569da5d0a6ca5311206b4d2b94dbd8e528bcde70b4144ffda55c7dac69",
+      "public_sha256": "6bd724569da5d0a6ca5311206b4d2b94dbd8e528bcde70b4144ffda55c7dac69",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "results/evaluation/analysis/tables/timing.md",
+      "source_relative_path": "results/evaluation/analysis/tables/timing.md",
+      "source_sha256": "5fd0e093c5c90767a74f8e56bd24d5bf5ce4b8f482c3cdeb7e227738bc40a446",
+      "public_sha256": "5fd0e093c5c90767a74f8e56bd24d5bf5ce4b8f482c3cdeb7e227738bc40a446",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/active_code_equivalence.json",
+      "source_relative_path": "revision-2026-11-03/experiments/active_code_equivalence.json",
+      "source_sha256": "c03e62d030e66bf3d359dabd366a8f22b109fc2566dd676d558cb12b54251a8c",
+      "public_sha256": "c03e62d030e66bf3d359dabd366a8f22b109fc2566dd676d558cb12b54251a8c",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/all_original_and_new_pairs.csv",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/all_original_and_new_pairs.csv",
+      "source_sha256": "06d6342891d4fe187a49afadf041234907ad93f430c5b85bd40dc83f5529c704",
+      "public_sha256": "06d6342891d4fe187a49afadf041234907ad93f430c5b85bd40dc83f5529c704",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/heldout_pairs.csv",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/heldout_pairs.csv",
+      "source_sha256": "b763f1b1ef56b3ca1f497084eaabff780659aed03b3074190cc24ad7ce78b354",
+      "public_sha256": "b763f1b1ef56b3ca1f497084eaabff780659aed03b3074190cc24ad7ce78b354",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/integrity.json",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/integrity.json",
+      "source_sha256": "c7ca8c5c28f238a78a9d36b7a83aad8a7f8248b3353f39250fc85bd85dce5c9d",
+      "public_sha256": "6dadca642eab8dccc7bf26a7fe786221a258eac6cde5620b852bad8a5c72f266",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.new_asset_records[0].lods_file (absolute project path -> repository-relative path)",
+        "$.new_asset_records[1].lods_file (absolute project path -> repository-relative path)",
+        "$.new_asset_records[2].lods_file (absolute project path -> repository-relative path)",
+        "$.original_and_new_environment_comparison[0].config.manifest (absolute project path -> repository-relative path)",
+        "$.original_and_new_environment_comparison[1].config.manifest (absolute project path -> repository-relative path)",
+        "$.original_and_new_environment_comparison[2].config.manifest (absolute project path -> repository-relative path)",
+        "$.original_and_new_environment_comparison[3].config.manifest (absolute project path -> repository-relative path)"
+      ]
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/pooled_H2_pairs.csv",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/pooled_H2_pairs.csv",
+      "source_sha256": "12caf685ae3f38c02000599f83a34641c60451db54c50ece0a08578551e317d9",
+      "public_sha256": "12caf685ae3f38c02000599f83a34641c60451db54c50ece0a08578551e317d9",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/report.md",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/report.md",
+      "source_sha256": "37e1fc82428bb9b5ea72203d193e3f7e3320f4a3a94c352fcb387150c4dc89c2",
+      "public_sha256": "37e1fc82428bb9b5ea72203d193e3f7e3320f4a3a94c352fcb387150c4dc89c2",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analysis/summary.json",
+      "source_relative_path": "revision-2026-11-03/experiments/analysis/summary.json",
+      "source_sha256": "d863da913238e3b14abd41ff3c5efe13731fae111c7dc8c3288edbc131f9add7",
+      "public_sha256": "d863da913238e3b14abd41ff3c5efe13731fae111c7dc8c3288edbc131f9add7",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/analyze_replication.py",
+      "source_relative_path": "revision-2026-11-03/experiments/analyze_replication.py",
+      "source_sha256": "31147fcef343939887bdf96edbff373cd33ac31885e9b433d2e6c38f5f1801da",
+      "public_sha256": "31147fcef343939887bdf96edbff373cd33ac31885e9b433d2e6c38f5f1801da",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/audit_active_code.py",
+      "source_relative_path": "revision-2026-11-03/experiments/audit_active_code.py",
+      "source_sha256": "93c1dbc4bbb13432e2332a4c41d56b3b0438bec8a60b105f967e72b5c6c09b66",
+      "public_sha256": "93c1dbc4bbb13432e2332a4c41d56b3b0438bec8a60b105f967e72b5c6c09b66",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/build_heldout_dataset.py",
+      "source_relative_path": "revision-2026-11-03/experiments/build_heldout_dataset.py",
+      "source_sha256": "918fd3b0518bc2970e69acb5b3fec304ce8bf99b307bfb3b820a468c982abffe",
+      "public_sha256": "918fd3b0518bc2970e69acb5b3fec304ce8bf99b307bfb3b820a468c982abffe",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/checksums.json",
+      "source_relative_path": "revision-2026-11-03/experiments/checksums.json",
+      "source_sha256": "a585878250fd07366b67b5a707d4acb4713b8b6380deed4756710de7a1b4f917",
+      "public_sha256": "a585878250fd07366b67b5a707d4acb4713b8b6380deed4756710de7a1b4f917",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/COMPATIBILITY_ADDENDUM.md",
+      "source_relative_path": "revision-2026-11-03/experiments/COMPATIBILITY_ADDENDUM.md",
+      "source_sha256": "871afd8b885bb8371ed542780586177929f957d27c8496d243aef32209da1ce0",
+      "public_sha256": "871afd8b885bb8371ed542780586177929f957d27c8496d243aef32209da1ce0",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/COMPATIBILITY_RESOLUTION.md",
+      "source_relative_path": "revision-2026-11-03/experiments/COMPATIBILITY_RESOLUTION.md",
+      "source_sha256": "0000f118c404080938d5396fbb5684a53d4ed84632bc75bf92d608327b7c217e",
+      "public_sha256": "0000f118c404080938d5396fbb5684a53d4ed84632bc75bf92d608327b7c217e",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/frozen_code_hashes.json",
+      "source_relative_path": "revision-2026-11-03/experiments/frozen_code_hashes.json",
+      "source_sha256": "ba0864ecd024bc7b0201b406e4f5d931b7c9aa6466ee918863bab74f024f02e9",
+      "public_sha256": "ba0864ecd024bc7b0201b406e4f5d931b7c9aa6466ee918863bab74f024f02e9",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/heldout/environment.json",
+      "source_relative_path": "revision-2026-11-03/experiments/heldout/environment.json",
+      "source_sha256": "7d0c0ec5fcf38e67d6ed776e3e796d3fc8bc2e4d3d0dc77dd9a856428df71bb2",
+      "public_sha256": "2954e0de1c0f4f32f288b199a4d1ee36393933a1c89e3f8689ba0220faac60de",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "$.config.manifest (absolute project path -> repository-relative path)",
+        "$.argv (omitted command-line invocation)",
+        "$.sessions[0].argv (omitted command-line invocation)"
+      ]
+    },
+    {
+      "path": "revision-2026-11-03/experiments/heldout/raw.jsonl",
+      "source_relative_path": "revision-2026-11-03/experiments/heldout/raw.jsonl",
+      "source_sha256": "09fa02be8fe209c9407354bb7cdb669c717ed9198855798f48e74d7141acd367",
+      "public_sha256": "463366c492cb2f2d4183aafce933f6353da03e16aef3723e7cce8d35ac68f08e",
+      "byte_identical": false,
+      "public_derivative_changes": [
+        "record[3].lods_file (absolute project path -> repository-relative path)",
+        "record[7].lods_file (absolute project path -> repository-relative path)",
+        "record[11].lods_file (absolute project path -> repository-relative path)"
+      ]
+    },
+    {
+      "path": "revision-2026-11-03/experiments/historical_code_mismatch.json",
+      "source_relative_path": "revision-2026-11-03/experiments/historical_code_mismatch.json",
+      "source_sha256": "1557371cf0be70ef7cf0c2e86688d71663e4149870a3408be0c3a6cdee419495",
+      "public_sha256": "1557371cf0be70ef7cf0c2e86688d71663e4149870a3408be0c3a6cdee419495",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/historical_perception_diff.txt",
+      "source_relative_path": "revision-2026-11-03/experiments/historical_perception_diff.txt",
+      "source_sha256": "d80659709f2d01d9c2d36c23c2ec70ba1c32cc44d3d1380798fa0ec0194c1bd3",
+      "public_sha256": "d80659709f2d01d9c2d36c23c2ec70ba1c32cc44d3d1380798fa0ec0194c1bd3",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/historical_perception_reconstruction.py",
+      "source_relative_path": "revision-2026-11-03/experiments/historical_perception_reconstruction.py",
+      "source_sha256": "54bb85c0b3a94891b4d1e2f833740f96b8c09aeb57ccdf3905cf8a604d555627",
+      "public_sha256": "54bb85c0b3a94891b4d1e2f833740f96b8c09aeb57ccdf3905cf8a604d555627",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/inspect_source_orientation.py",
+      "source_relative_path": "revision-2026-11-03/experiments/inspect_source_orientation.py",
+      "source_sha256": "bf280ced8cadace0b66dcde9c824fc1be5de94e5714adde8c14d495b84b2824a",
+      "public_sha256": "bf280ced8cadace0b66dcde9c824fc1be5de94e5714adde8c14d495b84b2824a",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/manifest.json",
+      "source_relative_path": "revision-2026-11-03/experiments/manifest.json",
+      "source_sha256": "1268dfb0812136f7b81b51947956b19e0b3438f38610d97358666aba25837b12",
+      "public_sha256": "1268dfb0812136f7b81b51947956b19e0b3438f38610d97358666aba25837b12",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/orientation.json",
+      "source_relative_path": "revision-2026-11-03/experiments/orientation.json",
+      "source_sha256": "7e4477d92168ce45fab87d929779e11ed8be111b23cbba880bb7c7493fd1539f",
+      "public_sha256": "7e4477d92168ce45fab87d929779e11ed8be111b23cbba880bb7c7493fd1539f",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/prepare_replication.py",
+      "source_relative_path": "revision-2026-11-03/experiments/prepare_replication.py",
+      "source_sha256": "efd89e54eb56a4d2809d673c2a6aa368cf560706cecae2774ffdf6e735ba310b",
+      "public_sha256": "efd89e54eb56a4d2809d673c2a6aa368cf560706cecae2774ffdf6e735ba310b",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/PROSPECTIVE_PROTOCOL.md",
+      "source_relative_path": "revision-2026-11-03/experiments/PROSPECTIVE_PROTOCOL.md",
+      "source_sha256": "7b0258ab72f2cea189f1b8c1a2b3ecec23856569eb07cffc43197323cc0816e5",
+      "public_sha256": "7b0258ab72f2cea189f1b8c1a2b3ecec23856569eb07cffc43197323cc0816e5",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/protocol_sha256.json",
+      "source_relative_path": "revision-2026-11-03/experiments/protocol_sha256.json",
+      "source_sha256": "c959c78bee7d7970c213f4002c29c8e670200a3761c93654162ed3a813b90452",
+      "public_sha256": "c959c78bee7d7970c213f4002c29c8e670200a3761c93654162ed3a813b90452",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/external/SOURCES.json",
+      "source_relative_path": "revision-2026-11-03/experiments/external/SOURCES.json",
+      "source_sha256": "c5faacfbc50422b4eb94c7fc2f56e2f57b370c4f241aaebc4dc43151eaa32d90",
+      "public_sha256": "c5faacfbc50422b4eb94c7fc2f56e2f57b370c4f241aaebc4dc43151eaa32d90",
+      "byte_identical": true,
+      "public_derivative_changes": []
+    },
+    {
+      "path": "revision-2026-11-03/experiments/prior_inventory.public.json",
+      "public_sha256": "74b1bfb25c6c83085fb0bd4c99b291ff5e721d11022949eff3da4e9248e1a137",
+      "generated_for_publication": true,
+      "note": "Explicit redacted derivative of historical filename/hash inventory; full original not distributed.",
+      "source_relative_path": "revision-2026-11-03/experiments/prior_inventory.json",
+      "source_sha256": "5c4baf5b6ff8cb09ca8f18c51b6d46a9b4e904a689df14ed368c60f17db6a61a",
+      "byte_identical": false
+    },
+    {
+      "path": "revision-2026-11-03/experiments/README.md",
+      "public_sha256": "51b07ca38a6ccc078f6473b367b4138fa0c312165b0798ddb37d3a6622262aed",
+      "generated_for_publication": true,
+      "note": "New public documentation/helper; does not replace a historical record.",
+      "source_relative_path": "revision-2026-11-03/experiments/README.md",
+      "source_sha256": "8ac000942b8a86350678d60bc2550cdd9044d53b3d4a6fc98b06d41130761601",
+      "byte_identical": false
+    },
+    {
+      "path": "dataset/README.md",
+      "public_sha256": "936b58947b05fe84c595af094e5b380b2a364e77faa57f58c851dec086a9c2ba",
+      "generated_for_publication": true,
+      "note": "New public documentation/helper; does not replace a historical record.",
+      "source_relative_path": "dataset/README.md",
+      "source_sha256": "300f173ac8f49b834d19aa2ac3b1506ca6bc2fa2eae4955e3b822e9d85e85ebe",
+      "byte_identical": false
+    },
+    {
+      "path": "README.md",
+      "public_sha256": "685a614f71ce8cbac61808745096ac77b485e71015d9f39bce0217bbf3dff84b",
+      "generated_for_publication": true,
+      "note": "New public documentation/read-only integrity helper; historical research code unchanged."
+    },
+    {
+      "path": "scripts/verify_publication.py",
+      "public_sha256": "23a3fa46b62551f777a73bd19abf264460e882986d841e9830bf757d91f795ed",
+      "generated_for_publication": true,
+      "note": "New public documentation/read-only integrity helper; historical research code unchanged."
+    },
+    {
+      "path": ".gitignore",
+      "public_sha256": "b10f84d413d4cee241e78449631a5e81027efe119b9ad1d7f0e8ec1f819ff43f",
+      "generated_for_publication": true,
+      "note": "Exact file/directory allowlist; future assets, private files, caches and outputs remain ignored."
+    },
+    {
+      "path": ".gitattributes",
+      "public_sha256": "70ddec77c46bf72a213200d74e20a39aef4dfc0826edc37eb6d36ee31284b99f",
+      "generated_for_publication": true,
+      "note": "Disable Git text conversion for all files so frozen archive bytes survive cloning and core.autocrlf differences."
+    }
+  ],
+  "manifest_note": "This manifest does not hash itself. It enumerates every other distributed file. Generated Python bytecode/cache files are ignored and are not part of the release."
+}

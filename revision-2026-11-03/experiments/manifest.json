@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "generated_by": "build_heldout_dataset.py",
+  "generated_at": "2026-11-03T21:21:01+07:00",
+  "blender_version": "5.1.2",
+  "assets": {
+    "nefertiti": {
+      "file": "assets/nefertiti.blend",
+      "object": "nefertiti_HighPoly",
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source": {
+        "type": "external",
+        "name": "nefertiti",
+        "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/nefertiti.obj",
+        "sha256": "19e39748b145092878cc4faafd050505eb5991c5d3e497be2b4575673fa87968",
+        "credit": "| Nefertiti | ![](data/nefertiti.png) | [.zip](data/nefertiti.zip),[.z01](data/nefertiti.z01),[.z02](data/nefertiti.z02),[.z03](data/nefertiti.z03),[.z04](data/nefertiti.z04) | [.obj](data/nefertiti.obj) | [Berlin Egyptian Museum](https://www.thingiverse.com/thing:3974391) | missing |",
+        "source_link": "https://github.com/alecjacobson/common-3d-test-models",
+        "first_known_appearance": null,
+        "collection": "https://github.com/alecjacobson/common-3d-test-models",
+        "retrieved_at": "2026-11-03T21:19:51+07:00"
+      },
+      "license_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed.",
+      "preprocessing": [
+        {
+          "step": "obj_import",
+          "operator": "bpy.ops.wm.obj_import",
+          "forward_axis": "NEGATIVE_Z",
+          "up_axis": "Y",
+          "use_split_objects": false,
+          "use_split_groups": false,
+          "validate_meshes": true,
+          "obj_vertices": 49971,
+          "obj_faces": 99938,
+          "imported_vertices": 49971,
+          "imported_polygons": 99938,
+          "note": null,
+          "axis_conversion": "Blender (x, y, z) = OBJ (x, -z, y), baked into vertices"
+        },
+        {
+          "step": "orient",
+          "rotation_euler_xyz_degrees": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            0.02,
+            -0.026001,
+            0.0345
+          ],
+          "bbox_size_before": [
+            238.685997,
+            362.533997,
+            494.605011
+          ],
+          "uniform_scale": 0.004043631,
+          "longest_side_after": 2.0
+        },
+        {
+          "step": "triangulate",
+          "method": "bmesh.ops.triangulate(quad_method=BEAUTY, ngon_method=BEAUTY)",
+          "polygons_before": 99938,
+          "polygons_split": 0,
+          "triangles_after": 99938
+        },
+        {
+          "step": "shade_smooth",
+          "note": "display only; no sharp-edge or seam marks are added"
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "bbox_size_before": [
+            0.965158,
+            1.465954,
+            2.0
+          ],
+          "uniform_scale": 1.00000003,
+          "longest_side_after": 2.0
+        }
+      ],
+      "orientation": {
+        "up": "+Z",
+        "front": "-Y",
+        "front_feature": "source yaw retained; full multiview evaluation",
+        "rotation_euler_xyz_degrees": [
+          -90,
+          0,
+          0
+        ],
+        "applied_after": "OBJ import axis conversion"
+      },
+      "triangles": 99938,
+      "vertices": 49971,
+      "edges": 149907,
+      "polygons": 99938,
+      "connected_components": 1,
+      "has_uv": false,
+      "uv_layers": [],
+      "materials": 0,
+      "attributes": [
+        "material_index",
+        "position",
+        "sharp_face"
+      ],
+      "manifold_edge_fraction": 1.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "surface_area": 5.938372,
+      "bbox_min": [
+        -0.482579,
+        -0.732977,
+        -1.0
+      ],
+      "bbox_max": [
+        0.482579,
+        0.732977,
+        1.0
+      ],
+      "geometry_sha256": "f7626f964b5fd185a3525cf78f8a00217cfa05c0cc42fb26342577e5826ef0ae",
+      "roi": {
+        "group": "LOD_EvalROI",
+        "description": "Fixed geometric upper-quarter proxy, not validated semantic importance",
+        "rule": "ANY[box (-1.01, -1.01, 0.5)..(1.01, 1.01, 1.01)]",
+        "rule_spec": {
+          "union": [
+            {
+              "box": [
+                [
+                  -1.01,
+                  -1.01,
+                  0.5
+                ],
+                [
+                  1.01,
+                  1.01,
+                  1.01
+                ]
+              ]
+            }
+          ],
+          "exclude": []
+        },
+        "vertices": 20964,
+        "vertex_fraction": 0.419523,
+        "area_fraction": 0.327156
+      }
+    },
+    "lucy": {
+      "file": "assets/lucy.blend",
+      "object": "lucy_HighPoly",
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source": {
+        "type": "external",
+        "name": "lucy",
+        "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/lucy.obj",
+        "sha256": "ea54611a3466bc903a107fd825409344562b8c4a8f191bbdc88ce380bebd0911",
+        "credit": "| Lucy | ![](data/lucy.png)  |  [.zip](data/lucy.zip),[.z01](data/lucy.z01),[.z02](data/lucy.z02),[.z03](data/lucy.z03),[.z04](data/lucy.z04) ,[.z05](data/lucy.z05)  |  [.obj](data/lucy.obj)  |  [Stanford University](http://graphics.stanford.edu/data/3Dscanrep/)  | missing |",
+        "source_link": "https://github.com/alecjacobson/common-3d-test-models",
+        "first_known_appearance": null,
+        "collection": "https://github.com/alecjacobson/common-3d-test-models",
+        "retrieved_at": "2026-11-03T21:19:51+07:00"
+      },
+      "license_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed.",
+      "preprocessing": [
+        {
+          "step": "obj_import",
+          "operator": "bpy.ops.wm.obj_import",
+          "forward_axis": "NEGATIVE_Z",
+          "up_axis": "Y",
+          "use_split_objects": false,
+          "use_split_groups": false,
+          "validate_meshes": true,
+          "obj_vertices": 49987,
+          "obj_faces": 99970,
+          "imported_vertices": 49987,
+          "imported_polygons": 99970,
+          "note": null,
+          "axis_conversion": "Blender (x, y, z) = OBJ (x, -z, y), baked into vertices"
+        },
+        {
+          "step": "orient",
+          "rotation_euler_xyz_degrees": [
+            -90,
+            0,
+            0
+          ]
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            690.968018,
+            -121.536484,
+            192.720978
+          ],
+          "bbox_size_before": [
+            930.124023,
+            533.769073,
+            1597.221985
+          ],
+          "uniform_scale": 0.001252174,
+          "longest_side_after": 2.0
+        },
+        {
+          "step": "triangulate",
+          "method": "bmesh.ops.triangulate(quad_method=BEAUTY, ngon_method=BEAUTY)",
+          "polygons_before": 99970,
+          "polygons_split": 0,
+          "triangles_after": 99970
+        },
+        {
+          "step": "shade_smooth",
+          "note": "display only; no sharp-edge or seam marks are added"
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "bbox_size_before": [
+            1.164677,
+            0.668372,
+            2.0
+          ],
+          "uniform_scale": 1.0,
+          "longest_side_after": 2.0
+        }
+      ],
+      "orientation": {
+        "up": "+Z",
+        "front": "-Y",
+        "front_feature": "source yaw retained; full multiview evaluation",
+        "rotation_euler_xyz_degrees": [
+          -90,
+          0,
+          0
+        ],
+        "applied_after": "OBJ import axis conversion"
+      },
+      "triangles": 99970,
+      "vertices": 49987,
+      "edges": 149955,
+      "polygons": 99970,
+      "connected_components": 1,
+      "has_uv": false,
+      "uv_layers": [],
+      "materials": 0,
+      "attributes": [
+        "material_index",
+        "position",
+        "sharp_face"
+      ],
+      "manifold_edge_fraction": 1.0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "surface_area": 4.01048,
+      "bbox_min": [
+        -0.582339,
+        -0.334186,
+        -1.0
+      ],
+      "bbox_max": [
+        0.582339,
+        0.334186,
+        1.0
+      ],
+      "geometry_sha256": "2e4f5e62ea927a8a652d816fb559c0f41a6f82bd1c115152875828e0ee4bc99a",
+      "roi": {
+        "group": "LOD_EvalROI",
+        "description": "Fixed geometric upper-quarter proxy, not validated semantic importance",
+        "rule": "ANY[box (-1.01, -1.01, 0.5)..(1.01, 1.01, 1.01)]",
+        "rule_spec": {
+          "union": [
+            {
+              "box": [
+                [
+                  -1.01,
+                  -1.01,
+                  0.5
+                ],
+                [
+                  1.01,
+                  1.01,
+                  1.01
+                ]
+              ]
+            }
+          ],
+          "exclude": []
+        },
+        "vertices": 10137,
+        "vertex_fraction": 0.202793,
+        "area_fraction": 0.194171
+      }
+    },
+    "happy-buddha": {
+      "file": "assets/happy-buddha.blend",
+      "object": "happy-buddha_HighPoly",
+      "category": "sculpted_statue",
+      "split": "evaluation",
+      "source": {
+        "type": "external",
+        "name": "happy-buddha",
+        "url": "https://raw.githubusercontent.com/alecjacobson/common-3d-test-models/8a4f8642acaf43f9cd7b67858a1502e1055ef202/data/happy.obj",
+        "sha256": "8ce5a4a7161efd97dabc8eeb281824fac1b17c9ba2cb0c2c6f350cd05982058c",
+        "credit": "| Happy Buddha | ![](data/happy.png) | [.zip](data/happy.zip) | [.obj](data/happy.obj) | [Stanford](http://graphics.stanford.edu/data/3Dscanrep/) | [dblp](https://dblp.uni-trier.de/rec/bibtex/conf/siggraph/CurlessL96) |",
+        "source_link": "https://github.com/alecjacobson/common-3d-test-models",
+        "first_known_appearance": null,
+        "collection": "https://github.com/alecjacobson/common-3d-test-models",
+        "retrieved_at": "2026-11-03T21:19:52+07:00"
+      },
+      "license_note": "Measurement only. Collection attribution is not a licence grant; no source geometry or render is redistributed.",
+      "preprocessing": [
+        {
+          "step": "obj_import",
+          "operator": "bpy.ops.wm.obj_import",
+          "forward_axis": "NEGATIVE_Z",
+          "up_axis": "Y",
+          "use_split_objects": false,
+          "use_split_groups": false,
+          "validate_meshes": true,
+          "obj_vertices": 49251,
+          "obj_faces": 98601,
+          "imported_vertices": 49251,
+          "imported_polygons": 98601,
+          "note": null,
+          "axis_conversion": "Blender (x, y, z) = OBJ (x, -z, y), baked into vertices"
+        },
+        {
+          "step": "orient",
+          "rotation_euler_xyz_degrees": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            -0.005441,
+            0.006697,
+            0.148776
+          ],
+          "bbox_size_before": [
+            0.08132,
+            0.081392,
+            0.198025
+          ],
+          "uniform_scale": 10.099735105,
+          "longest_side_after": 2.0
+        },
+        {
+          "step": "triangulate",
+          "method": "bmesh.ops.triangulate(quad_method=BEAUTY, ngon_method=BEAUTY)",
+          "polygons_before": 98601,
+          "polygons_split": 0,
+          "triangles_after": 98601
+        },
+        {
+          "step": "shade_smooth",
+          "note": "display only; no sharp-edge or seam marks are added"
+        },
+        {
+          "step": "normalize",
+          "bbox_center_before": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "bbox_size_before": [
+            0.82131,
+            0.822038,
+            2.0
+          ],
+          "uniform_scale": 1.0,
+          "longest_side_after": 2.0
+        }
+      ],
+      "orientation": {
+        "up": "+Z",
+        "front": "-Y",
+        "front_feature": "source yaw retained; full multiview evaluation",
+        "rotation_euler_xyz_degrees": [
+          0,
+          0,
+          0
+        ],
+        "applied_after": "OBJ import axis conversion"
+      },
+      "triangles": 98601,
+      "vertices": 49251,
+      "edges": 147905,
+      "polygons": 98601,
+      "connected_components": 1,
+      "has_uv": false,
+      "uv_layers": [],
+      "materials": 0,
+      "attributes": [
+        "material_index",
+        "position",
+        "sharp_face"
+      ],
+      "manifold_edge_fraction": 0.999953,
+      "boundary_edges": 7,
+      "nonmanifold_edges": 0,
+      "degenerate_triangles": 0,
+      "surface_area": 5.714362,
+      "bbox_min": [
+        -0.410655,
+        -0.411019,
+        -1.0
+      ],
+      "bbox_max": [
+        0.410655,
+        0.411019,
+        1.0
+      ],
+      "geometry_sha256": "f689d94be859e9c9d94ea74e7e93ae2659785d8b1890a67fb93c5c0d45093fdd",
+      "roi": {
+        "group": "LOD_EvalROI",
+        "description": "Fixed geometric upper-quarter proxy, not validated semantic importance",
+        "rule": "ANY[box (-1.01, -1.01, 0.5)..(1.01, 1.01, 1.01)]",
+        "rule_spec": {
+          "union": [
+            {
+              "box": [
+                [
+                  -1.01,
+                  -1.01,
+                  0.5
+                ],
+                [
+                  1.01,
+                  1.01,
+                  1.01
+                ]
+              ]
+            }
+          ],
+          "exclude": []
+        },
+        "vertices": 9709,
+        "vertex_fraction": 0.197133,
+        "area_fraction": 0.178708
+      }
+    }
+  },
+  "splits": {
+    "evaluation": [
+      "nefertiti",
+      "lucy",
+      "happy-buddha"
+    ],
+    "tuning": []
+  },
+  "roi_definition": {
+    "group": "LOD_EvalROI",
+    "use": "evaluation only, never simplification input",
+    "rule": "z >= z_min + .75*(z_max-z_min), fixed before method outcomes",
+    "status": "geometric proxy; no independent semantic validation"
+  },
+  "protocol_sha256": "7b0258ab72f2cea189f1b8c1a2b3ecec23856569eb07cffc43197323cc0816e5"
+}

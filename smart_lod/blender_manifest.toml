@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+id = "smart_lod"
+version = "0.2.0"
+name = "Perceptual Smart LOD"
+tagline = "Generate and evaluate perceptually weighted mesh LODs"
+maintainer = "Smart LOD Project"
+type = "add-on"
+tags = ["Mesh", "Object"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+files = "Export user-selected benchmark CSV and JSON reports"
+
